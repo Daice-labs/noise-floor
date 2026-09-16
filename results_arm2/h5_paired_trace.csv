@@ -1,0 +1,5 @@
+delta,paired_trace_divergence,paired_outcome_p_at_R1
+0.0,0.0,1.0
+0.02,0.0011,0.1578
+0.05,0.0016,0.0833
+0.1,0.0088,0.025

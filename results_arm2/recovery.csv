@@ -1,0 +1,7 @@
+component,reference(hiR),estimate,ci_lo,ci_hi,ref_in_CI
+between_task,0.2329,0.2329,0.1754,0.2526,True
+provider,0.0758,0.0719,0.0541,0.0905,True
+harness_plus_judge,0.0414,0.043,0.0307,0.054,True
+harness,0.0281,0.0292,0.0174,0.0394,True
+judge,0.0134,0.0138,0.0076,0.0199,True
+temp_attributable,0.063,0.0533,0.0381,0.0681,True

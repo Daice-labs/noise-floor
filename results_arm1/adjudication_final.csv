@@ -1,0 +1,13 @@
+hypothesis,measured,verdict,scope
+H1 provider largest single component,"provider=0.0719 vs harness=0.0292, judge=0.0138",PASS,DEMONSTRATION (synthetic ground truth); paper rule aggregates over >=2 of 3 benchmarks
+H2 harness CI excludes zero,CI lower bound = 0.0174,PASS,DEMONSTRATION (synthetic ground truth)
+H3 detection ratio >= 2.0 (pred 3.0),"runs-to-detect L0=23, L2=9, ratio=2.56",PASS,DEMONSTRATION (synthetic ground truth)
+H6 flip rate >= 0.20 at surveyed-median delta,empirical wrong-sign rate @ target=0.02 (PLACEHOLDER; realized outcome delta=0.003) = 0.55,PASS,DEMONSTRATION (synthetic ground truth); delta locked from EXP5 at G1
+H4 hosted temp-0 not deterministic,adjudicated in the Mode B section from batch L1 cells,N/A,Mode B only
+"H5 trace flags before outcome (smallest regression, R=1)","trace_div=0.0021, outcome detected=False",PASS,DEMONSTRATION (synthetic ground truth)
+H1 provider largest single component,"provider=0.0301 vs harness=0.0000, judge=0.0000",PASS,EMPIRICAL (this benchmark x model)
+H2 harness CI excludes zero,CI lower bound = 0.0000,FAIL,EMPIRICAL
+H3 detection ratio >= 2.0,"runs-to-detect L0=6, L2=1, ratio=6.0",PASS,EMPIRICAL (measured withins; catalog injection on real scaffolds is repo-scale EXP2)
+H4 hosted temp-0 residual variance > 0,within(L1)=0.01329,PASS,EMPIRICAL (hosted/api endpoint)
+H6 natural-pair winner instability,"retry_on_vs_off: realized delta 0.03, pair disagreement 0.167",REPORTED (adjudicated against surveyed bins at G2),EMPIRICAL (natural configuration pairs)
+H6 natural-pair winner instability,"prodtemp_vs_temp0: realized delta 0.0183, pair disagreement 0.333",REPORTED (adjudicated against surveyed bins at G2),EMPIRICAL (natural configuration pairs)

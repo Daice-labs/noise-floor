@@ -1,0 +1,11 @@
+numpy
+pandas
+scipy
+matplotlib
+rapidfuzz
+openai
+evalplus
+nbconvert
+nbformat
+ipykernel
+typing_extensions>=4.15.0

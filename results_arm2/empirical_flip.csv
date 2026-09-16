@@ -1,0 +1,4 @@
+true_delta,R,realized_outcome_delta,empirical_wrong_sign_rate,empirical_pair_disagreement
+0.01,1,-0.0122,0.7,0.6
+0.02,1,0.003,0.55,0.7
+0.04,1,0.006,0.3,0.6

@@ -1,0 +1,78 @@
+{
+  "rules": {
+    "alpha": 0.05,
+    "holm_primary_family": [
+      "H1",
+      "H2",
+      "H3",
+      "H6"
+    ],
+    "H1_rule": "provider component is strictly the largest single within-task component (paper-level: on at least 2 of 3 benchmarks; per run: on this benchmark)",
+    "H2_rule": "harness component bootstrap CI excludes zero (lower bound > 0)",
+    "H3_ratio_threshold": 2.0,
+    "H3_ratio_prediction": 3.0,
+    "H6_flip_threshold": 0.2,
+    "H6_falsified_below": 0.05,
+    "H6_delta": "CFG.surveyed_median_delta (PLACEHOLDER until EXP5 survey median is locked)",
+    "H4_rule": "hosted temperature-zero replicate variance > 0 (Mode B hosted L1 cells only)",
+    "H5_rule": "paired trace divergence flags the smallest catalog regression at replicate counts where the paired outcome test is not significant"
+  },
+  "prereg_hash": "2f9c058b7a6f848e",
+  "placeholders_to_lock_at_G1": [
+    "surveyed_median_delta",
+    "surveyed_delta_quartiles",
+    "pilot-calibrated (p) thresholds"
+  ],
+  "config": {
+    "run_mode": "api",
+    "api_base_url": "https://api.openai.com/v1",
+    "api_model": "gpt-4o-mini-2024-07-18",
+    "api_benchmark": "mbpp_plus",
+    "api_temperature_L0": 0.7,
+    "api_max_tokens": 1024,
+    "api_confirm_spend": true,
+    "n_tasks": 200,
+    "n_families": 20,
+    "replicates_grid": [
+      1,
+      5,
+      20
+    ],
+    "N_grid": [
+      50,
+      200
+    ],
+    "R_decomp": 20,
+    "R_reference": 400,
+    "R_ablation": 60,
+    "bootstrap_iters": 400,
+    "sigma_between": 1.1,
+    "within_family_sd": 0.35,
+    "sigma_provider": 0.85,
+    "temp0_scale": 0.18,
+    "sigma_concurrency": 0.13,
+    "sigma_sandbox": 0.11,
+    "sigma_toolorder": 0.09,
+    "judge_flip_p": 0.015,
+    "retry_on_fail": true,
+    "mock_failure_rate": 0.0,
+    "surveyed_median_delta": 0.02,
+    "surveyed_delta_quartiles": [
+      0.01,
+      0.02,
+      0.04
+    ],
+    "flip_pairs": 10,
+    "detection_magnitudes": [
+      0.02,
+      0.05,
+      0.08,
+      0.12
+    ],
+    "alpha": 0.05,
+    "power_target": 0.8,
+    "master_seed": 20260710
+  },
+  "config_hash": "87d194a80997f420",
+  "timestamp_utc": "2026-08-03T04:53:41Z"
+}

@@ -1,0 +1,7 @@
+{
+  "arm1": {"provider": 0.0301, "within_L1": 0.01329, "ratio": 6.0, "batch1_within": 0.0321,
+           "flips": {"retry_on_vs_off": [0.030, 0.1667], "prodtemp_vs_temp0": [0.0183, 0.3333]}},
+  "arm2": {"provider": 0.013237, "harness": 0.001105, "harness_ci_hi": 0.00187,
+           "within_L1": 0.0075, "temp_attr": 0.00672, "ratio": 3.0,
+           "flips": {"retry_on_vs_off": [0.025, 0.1667], "prodtemp_vs_temp0": [0.0233, 0.1667]}}
+}

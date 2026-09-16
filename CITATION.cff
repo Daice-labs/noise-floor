@@ -1,0 +1,6 @@
+cff-version: 1.2.0
+title: "The Noise Floor of Agent Evaluation: A Determinism Ladder, Detection Budgets, and a Two-Benchmark Measurement"
+message: "Anonymized for double-blind review."
+authors:
+  - name: "Anonymous"
+type: software

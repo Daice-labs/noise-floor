@@ -1,0 +1,42 @@
+{
+  "config_hash": "87d194a80997f420",
+  "run_mode": "api",
+  "prereg_hash": "2f9c058b7a6f848e",
+  "gate_G0_pass": true,
+  "components_estimate": {
+    "between_task": 0.23294,
+    "provider": 0.07188,
+    "harness_plus_judge": 0.04299,
+    "harness": 0.02921,
+    "judge": 0.01378,
+    "temp_attributable": 0.05328
+  },
+  "components_reference": {
+    "between_task": 0.23294,
+    "provider": 0.07577,
+    "harness_plus_judge": 0.04143,
+    "harness": 0.02808,
+    "judge": 0.01336,
+    "temp_attributable": 0.06302
+  },
+  "within_by_rung": {
+    "L0": 0.11487,
+    "L1": 0.06159,
+    "L2": 0.04299,
+    "L3": 0.0,
+    "L2_rule": 0.02921
+  },
+  "ablation_battery_pass_rate": 1.0,
+  "budgets": {
+    "detect_0.05_L0": [
+      20,
+      50,
+      1000
+    ],
+    "detect_0.05_L2": [
+      100,
+      3,
+      300
+    ]
+  }
+}

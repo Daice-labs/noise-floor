@@ -1,0 +1,12 @@
+ID,ablation,observed,predicted,pass
+AB1,disable concurrency,0.286,0.456,True
+AB4,disable sandbox,0.221,0.326,True
+AB5,disable tool-ordering,0.144,0.218,True
+AB3,rule scorer vs llm judge at L2,0.0138,judge component > 0,True
+AB2,retry off vs on (call multiset changes),mean calls 1.00 vs 1.44; fallbacks 0+0,call counts differ; zero fallbacks under content keying,True
+AB6,content-addressed vs call-order replay,fallbacks 0 vs 2907; outcome disagreement 0.73,order keying desyncs and corrupts; content keying exact,True
+AB7,deliberate replay miss,fallbacks 1; ledger valid flag 0,fallback counted; run marked invalid,True
+AB8,oracle recovers injected components,G0_PASS=True,recovery within CIs,True
+AB9,mock timeouts/malformed output at L3,injected-fault rate 0.158; pass-rate 0.620 vs clean 0.635; crashes 0,"harness survives; failures degrade outcomes in accounting, no crashes",True
+AB10,cluster-aware vs naive bootstrap CI width,cluster 0.0233 vs naive 0.0142,naive narrower (understates uncertainty) or equal,True
+AB11,"N, R sweeps around pre-registered values",MDE monotone in N: True; in R: True,monotone; headline conclusions stable across grid,True
